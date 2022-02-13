@@ -1,14 +1,21 @@
 @font-face {
   font-family: "Inter";
-  src: url(./fonts/Inter-Bold.ttf);
+  src: url(./../fonts/Inter-Bold.ttf);
   font-weight: 700;
   font-style: normal;
   font-display: auto;
 }
 @font-face {
   font-family: "Inter";
-  src: url(./fonts/Inter-Medium.ttf);
+  src: url(./../fonts/Inter-Medium.ttf);
   font-weight: 500;
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(./../fonts/Inter-Regular.ttf);
+  font-weight: 400;
   font-style: normal;
   font-display: auto;
 }
@@ -38,10 +45,6 @@ button {
 }
 button {
   cursor: pointer;
-}
-img {
-  width: 100%;
-  height: auto;
 }
 /** Main content */
 body {
@@ -112,28 +115,24 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   position: relative;
   border-right: 3px solid transparent;
   padding: 0.5rem 0;
   display: block;
   cursor: pointer;
 }
-.menu li::before {
-  content: "";
-  width: 2rem;
-  height: 2rem;
-  background-color: red;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
+
 .menu li a {
   margin-left: 4.5rem;
   font-size: 1.6rem;
   line-height: 1.9rem;
   color: #8da1b5;
   font-weight: 500;
+  transition: 0.4s ease;
+}
+.menu li img {
+  color: #8da1b5;
   transition: 0.4s ease;
 }
 .menu li:hover {
@@ -154,7 +153,7 @@ body {
   height: 9.9rem;
   position: absolute;
   top: -4rem;
-  left: 5.2rem;
+  left: 30%;
 }
 .footer-text {
   font-size: 1.6rem;
@@ -166,5 +165,85 @@ body {
 }
 
 .middle {
-  background-color: #e5e5e5;
+  background-color: #f5f5fb;
+  padding: 4.8rem;
+}
+.header-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-box {
+  position: relative;
+}
+#search {
+  width: 47rem;
+  height: 5.6rem;
+  padding: 1.6rem 2rem 1.6rem 5.6rem;
+  color: #ccd6e8;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+.fa-search {
+  position: absolute;
+  left: 2.3rem;
+  top: 2rem;
+}
+.fa-bell {
+  font-size: 2.5rem;
+}
+
+.nav-content {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-content h2 {
+  font-size: 2.8rem;
+  line-height: 3.3rem;
+  color: #011f3b;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.all-courses-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.all-courses-menu li {
+  margin-left: 5rem;
+}
+.all-courses-menu li a {
+  color: rgba(118, 132, 146, 0.8);
+  font-size: 1.7rem;
+  line-height: 2rem;
+  display: inline-block;
+  transition: all 0.4s ease;
+  position: relative;
+}
+.all-courses-menu li a::before {
+  transition: all 0.4s ease;
+  content: "";
+  position: absolute;
+  width: 1.8rem;
+  height: 0.2rem;
+  background-color: #5e81f4;
+  bottom: -0.7rem;
+  border-radius: 1px;
+  right: calc(50% - 0.9rem);
+  visibility: hidden;
+  opacity: 0;
+}
+.all-courses-menu li:hover a {
+  color: #5e81f4;
+}
+.all-courses-menu li:hover a::before {
+  visibility: visible;
+  opacity: 1;
 }

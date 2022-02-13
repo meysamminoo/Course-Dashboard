@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Course-Dashboard</title>
   </head>
   <body>
@@ -22,12 +23,30 @@
       <!-- nav menu -->
       <nav class="nav">
         <ul class="menu">
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">All courses</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Friends</a></li>
-          <li><a href="#">Chats</a></li>
-          <li><a href="#">Settings</a></li>
+          <li>
+            <img src="./images/dashboard.png" alt="Dashboard" />
+            <a href="#">Dashboard</a>
+          </li>
+          <li>
+            <img src="./images/all-courses.png" alt="All courses" />
+            <a href="#">All courses</a>
+          </li>
+          <li>
+            <img src="./images/resource.png" alt="Resources" />
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <img src="./images/profile.png" alt="Friends" />
+            <a href="#">Friends</a>
+          </li>
+          <li>
+            <img src="./images/chat.png" alt="Chats" />
+            <a href="#">Chats</a>
+          </li>
+          <li>
+            <img src="./images/settings.png" alt="Settings" />
+            <a href="#">Settings</a>
+          </li>
         </ul>
       </nav>
       <!-- footer -->
@@ -38,7 +57,25 @@
       </div>
     </section>
     <!--! Middle -->
-    <section class="middle"></section>
+    <section class="middle">
+      <header class="header-middle">
+        <form action="" method="" class="search-box">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="search" id="search" />
+        </form>
+        <i class="fa fa-bell"></i>
+      </header>
+      <div class="nav-content">
+        <h2>All courses</h2>
+        <nav class="nav">
+          <ul class="all-courses-menu">
+            <li><a href="#">Ongoing</a></li>
+            <li><a href="#">Favorite</a></li>
+            <li><a href="#">Complete</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
     <!--! Right -->
     <section class="right"></section>
 
