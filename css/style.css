@@ -46,6 +46,9 @@ button {
 button {
   cursor: pointer;
 }
+img {
+  max-width: 100%;
+}
 /** Main content */
 body {
   min-height: 100vh;
@@ -68,6 +71,7 @@ body {
 .right {
   grid-row: 1/2;
   grid-column: 10/13;
+  padding: 4rem 3.2rem;
 }
 /** Left  */
 .header-left {
@@ -324,4 +328,135 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+}
+/** Right content */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.profile h3 {
+  margin: 0 3rem;
+  font-size: 2rem;
+  color: #011f3b;
+  line-height: 2.3rem;
+}
+.profile .fa-angle-down {
+  color: #768492;
+}
+.progress {
+}
+.progress h3 {
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #011f3b;
+}
+.progress-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.img-progress {
+  width: 4.8rem;
+  height: 4.8rem;
+  margin-right: 1.8rem;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.fa-edit {
+  background-color: rgba(94, 129, 244, 0.2);
+  color: #5e81f4;
+}
+.fa-camera {
+  background-color: rgba(12, 195, 231, 0.18);
+  color: #0cc3e7;
+}
+.fa-circle {
+  background-color: rgba(255, 128, 139, 0.2);
+  color: #ffae33;
+}
+.progress-text {
+  flex: 1;
+}
+.myProgress {
+  flex: 1;
+
+  border-radius: 5rem;
+}
+.purple-bg {
+  background-color: rgba(94, 129, 244, 0.2);
+}
+.purple {
+  background-color: #5e81f4;
+}
+.green-bg {
+  background-color: rgba(12, 195, 231, 0.18);
+}
+.green {
+  background-color: #0cc3e7;
+}
+.yellow-bg {
+  background-color: rgba(255, 128, 139, 0.2);
+}
+.yellow {
+  background-color: #ffae33;
+}
+.myBar {
+  width: 80%;
+  height: 0.8rem;
+  border-radius: 5rem;
+}
+.progress-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.progress-text h4 {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #011f3b;
+}
+.progress-text p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #83919e;
+}
+
+.task {
+  margin-top: 6rem;
+}
+.task-box {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+}
+.fa-message {
+  background-color: rgba(94, 129, 244, 0.2);
+  color: #5e81f4;
+}
+.fa-cube {
+  background-color: rgba(255, 128, 139, 0.2);
+  color: #ffae33;
+}
+.task-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.task-text h4 {
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  color: #011f3b;
+}
+.task-text p {
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #83919e;
+}
+.download-app {
+  margin-top: 7rem;
 }
