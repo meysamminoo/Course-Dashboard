@@ -18,3 +18,25 @@ window.addEventListener("DOMContentLoaded", function () {
     task.classList.add("visible");
   });
 });
+
+// todo:
+const left = document.querySelector(".left");
+const leftSmall = document.querySelector(".left-small");
+const logoBox = document.querySelector(".logo-box");
+const logoBoxSmall = document.querySelector(".logo-box-small");
+// const leftNavSmall = document.querySelector(".left-small");
+
+logoBox.addEventListener("click", toggleMenu);
+logoBoxSmall.addEventListener("click", toggleMenuSmall);
+
+function toggleMenu() {
+  left.classList.add("hide-left");
+  leftSmall.classList.add("show-left-small");
+  document.body.classList.add("small");
+}
+
+function toggleMenuSmall() {
+  left.classList.remove("hide-left");
+  leftSmall.classList.remove("show-left-small");
+  document.body.classList.remove("small");
+}

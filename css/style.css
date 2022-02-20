@@ -56,21 +56,37 @@ body {
   font-size: 1.6rem;
   background-color: #ffffff;
   display: grid;
-  grid-template: 1fr / repeat(12, 1fr);
+  grid-template: 1fr / 27rem repeat(11, 1fr);
   font-family: "Inter";
+  position: relative;
+}
+.small {
+  grid-template: 1fr / 8rem repeat(11, 1fr);
 }
 .left {
   grid-row: 1/2;
-  grid-column: 1/3;
-  min-width: 27rem;
+  grid-column: 1/2;
+  width: 27rem;
+  transition: all 1s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
 }
+.hide-left {
+  display: none;
+  opacity: 0;
+}
+
 .middle {
   grid-row: 1/2;
-  grid-column: 3/10;
+  grid-column: 2/11;
 }
 .right {
   grid-row: 1/2;
-  grid-column: 10/13;
+  grid-column: 11/13;
   padding: 4rem 3.2rem;
   min-width: 38rem;
 }
@@ -168,7 +184,75 @@ body {
   margin-top: 5rem;
   text-align: justify;
 }
+/** left small  */
+.left-small {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1/2;
+  width: 8rem;
+  opacity: 0;
+  display: none;
+  transition: all 1s ease;
+  position: absolute;
+  top: 20%;
+  left: -8rem;
+}
+.show-left-small {
+  display: flex;
+  opacity: 1;
+  top: 20%;
+  left: 0;
+}
+.logo-box-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-img-small {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.nav-small {
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-small {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2.5rem;
+}
+.menu-small li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  position: relative;
+  padding: 0.5rem;
+  display: block;
+  cursor: pointer;
+  border-right: 3px solid transparent;
+  transition: all 0.4s ease;
+}
+.menu-small li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+}
+.menu-small li:hover {
+  border-right: 3px solid #5e81f4;
+}
 
+/** middle  */
 .middle {
   background-color: #f5f5fb;
   padding: 4.8rem;
@@ -505,5 +589,13 @@ body {
   }
   to {
     width: 65%;
+  }
+}
+@keyframes moveLeft {
+  from {
+    width: 27rem;
+  }
+  to {
+    width: 8rem;
   }
 }
