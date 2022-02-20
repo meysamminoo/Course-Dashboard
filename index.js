@@ -1,3 +1,17 @@
+// todo: full width search box with click
+const search = document.getElementById("search");
+search.addEventListener("focusin", focusin);
+search.addEventListener("focusout", focusout);
+
+function focusin() {
+  search.style.width = "97%";
+}
+
+function focusout() {
+  search.style.width = "47rem";
+}
+
+// todo: progressbar
 var i = 0;
 function move() {
   if (i == 0) {

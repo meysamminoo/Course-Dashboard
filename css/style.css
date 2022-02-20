@@ -179,6 +179,7 @@ body {
 }
 .search-box {
   position: relative;
+  width: 100%;
 }
 #search {
   width: 47rem;
@@ -190,6 +191,12 @@ body {
   font-weight: 400;
   border-radius: 1rem;
   background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  border: 1px solid transparent;
+}
+#search:focus {
+  border: 1px solid #5e81f4;
+  color: #272829;
 }
 .fa-search {
   position: absolute;
