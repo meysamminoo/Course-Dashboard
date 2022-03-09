@@ -266,7 +266,7 @@ body {
   width: 100%;
 }
 #search {
-  width: 47rem;
+  width: 50%;
   height: 5.6rem;
   padding: 1.6rem 2rem 1.6rem 5.6rem;
   color: #ccd6e8;
@@ -654,9 +654,6 @@ body {
     grid-column: 1/13;
     margin-top: 5rem;
     padding: 2rem;
-  }
-  #search {
-    width: 25rem;
   }
   .nav-content h2 {
     font-size: 1.8rem;

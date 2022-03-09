@@ -8,7 +8,7 @@ function focusin() {
 }
 
 function focusout() {
-  search.style.width = "47rem";
+  search.style.width = "50%";
 }
 
 // todo: move element bottom to top
@@ -19,12 +19,12 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// todo:
+// todo: collapse menu
+
 const left = document.querySelector(".left");
 const leftSmall = document.querySelector(".left-small");
 const logoBox = document.querySelector(".logo-box");
 const logoBoxSmall = document.querySelector(".logo-box-small");
-// const leftNavSmall = document.querySelector(".left-small");
 
 logoBox.addEventListener("click", toggleMenu);
 logoBoxSmall.addEventListener("click", toggleMenuSmall);
