@@ -20,7 +20,6 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 // todo: collapse menu
-
 const left = document.querySelector(".left");
 const leftSmall = document.querySelector(".left-small");
 const logoBox = document.querySelector(".logo-box");
@@ -30,9 +29,11 @@ logoBox.addEventListener("click", toggleMenu);
 logoBoxSmall.addEventListener("click", toggleMenuSmall);
 
 function toggleMenu() {
-  left.classList.add("hide-left");
-  leftSmall.classList.add("show-left-small");
-  document.body.classList.add("small");
+  if (document.body.clientWidth > 890) {
+    left.classList.add("hide-left");
+    leftSmall.classList.add("show-left-small");
+    document.body.classList.add("small");
+  }
 }
 
 function toggleMenuSmall() {
